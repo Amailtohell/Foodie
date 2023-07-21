@@ -1,5 +1,5 @@
 
-global.foodData = require('./db')(function call(err, data, CatData) {
+global.foodData = require('../db')(function call(err, data, CatData) {
   // console.log(data)
   if(err) console.log(err);
   global.foodData = data;
@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.use('/api/auth', require('./Routes/Auth'));
+app.use('/api/auth', require('../Routes/Auth'));
 
 
 app.listen(port, () => {
