@@ -14,7 +14,7 @@ const port =  process.env.PORT || 5000
 app.use((req, res, next) => {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://bespoke-mochi-f17f96.netlify.app/"
+    "https://bespoke-mochi-f17f96.netlify.app"
   );
   res.header(
     "Access-Control-Allow-Headers",
